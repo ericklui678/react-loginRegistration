@@ -7,9 +7,8 @@ import { login } from "../../actions/auth";
 class LoginPage extends Component {
   // submit func will call submit action
   // if everything goes well, redirect back to home page
-  submit = data => {
+  submit = data =>
     this.props.login(data).then(() => this.props.history.push("/"));
-  };
 
   render() {
     return (
